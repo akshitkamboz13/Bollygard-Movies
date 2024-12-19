@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,6 +18,11 @@ a:hover {
 
 /* Navbar Styles */
 
+.navbar {
+    background-color: #000000;
+    padding: 1rem 0;
+    border-bottom: 1px solid #000000;
+}
 .navbar-brand {
     color: #e0e0e0;
     font-size: 1.6rem;
@@ -55,7 +58,7 @@ a:hover {
 
 /* Video Container Styles */
 .video-container {
-    margin-top: 0%;
+    margin-top: -3%;
     position:absolute;
     width: 100%;
     height: 100vh;
@@ -110,13 +113,15 @@ a:hover {
     align-items: center;
     text-shadow: #333 1px 1px 20px;
 }
+.banner-content-left {
+    width: 50%;
+    padding: 2rem;
+}
 
 .banner-content-left h1 {
     font-size: 3rem;
     color: #e0e0e0;
     margin-bottom: 1rem;
-  
-
 }
 
 .banner-content-left p {
@@ -125,7 +130,26 @@ a:hover {
 
 .banner-button .btn {
     margin-right: 1rem;
-
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.banner-button .btn:hover {
+    background-color: #bb86fc;
+    color: #e0e0e0;
+}
+.banner-content-right #volume{
+    margin-left: 10px;
+    border: oldlace 3px solid;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-content-right #volume:hover{
+    background-color: #bb86fc;
+    color: white;
 }
 
 .slider-div{
@@ -294,7 +318,30 @@ a:hover {
 .footer .social-icons a:hover {
     color: #bb86fc;
 }
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer .row {
+    width: 100%;
+}
+
+.footer .col-lg-3,
+.footer .col-md-6 {
+    margin-bottom: 20px;
+}
+
+.footer .social-icons i {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+    color: #bb86fc;
+}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
@@ -338,4 +385,47 @@ a:hover {
     .footer .social-icons a {
         font-size: 1.2rem;
     }
+}
+
+.visitContainer {
+    position: relative;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.visitorOverLay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.visitor-count-container {
+    position: relative;
+    z-index: 1;
+}
+
+.visitor-count-container .from,
+.visitor-count-container .count,
+.visitor-count-container .vis {
+    margin-bottom: 10px;
+}
+
+.visitor-count-container h3,
+.visitor-count-container h4 {
+    margin: 0;
+}
+
+.minHegihtOnCount {
+    min-height: 50px;
+}
+
+.mt-3 {
+    margin-top: 1rem;
 }

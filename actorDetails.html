@@ -14,9 +14,10 @@
   <meta name="keywords"
     content="movies, YouTube movies, streaming movies, online movies, watch movies online, movie catalog, movie collection, filmography, new releases, classic movies,  classics, popular movies, best movies, top-rated movies, trending movies, latest movies, movie streaming, YouTube streaming, movie recommendations">
   <meta name="author" content="https://bollygradmovies.com">
-  <title>Bollygrad Movies | People from film industry </title>
+  <title>Bollygrad Movies | People details </title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/actors.css">
+  <link rel="stylesheet" href="./css/actorDetails.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="./actors.html">Actor&amp;Actress</a>
         </li>
-        
+       
       </ul>
       <div class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" id="searchedInput" type="search" placeholder="Search a movie name" aria-label="Search">
@@ -54,40 +55,83 @@
       </div>
     </div>
   </nav>
-  <section id="peopleSection">
-    <div class="box peopleSection">
-      <h2 class="head-line">Film Industry People(Actors & Actress)</h2>
-      <div class="p-3 movieSearchDiv">
-        <input type="search" class="form-control" placeholder="search" id="peopleSearchInput">
-        <button id="peopleSearchButton" class="btn btn-dark"><i
-            class="fa-solid fa-magnifying-glass text-white"></i></button>
-      </div>
-      <div class="peopleContainer">
-       
-      </div>
-    </div>
-    <div class="pagination container">
-      <div class="pageDiv">
-        <select name="" id="page" class="form-control">
-          <option>Go To Page</option>
-        </select>
-        <button class="btn btn-info" id="loadPageNumber">Load</button>
-      </div>
-      <div class="pDetails text-center mt-2">
-        <p>
-          <span id="currentPage">0</span>/ <span id="totalPages">0</span>
-        </p>
-        <div class="pButtons">
-          <button id="prevPage">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button id="nextPage">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
+  <section id="detailSection">
 
+
+    <!-- Name and Photo Section -->
+    <section class="name-photo-section">
+        <!-- Name and Photo will be dynamically populated here -->
+    </section>
+
+    <!-- Accordion Menu for Sections -->
+    <div class="accordion-container">
+        <div class="accordion-header">
+            <h2>Introduction</h2>
+        </div>
+        <div class="accordion-content intro-section">
+            <!-- Introduction content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Biography</h2>
+        </div>
+        <div class="accordion-content biography-section">
+            <!-- Biography content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Childhood</h2>
+        </div>
+        <div class="accordion-content childhood-section">
+            <!-- Childhood content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Backstory</h2>
+        </div>
+        <div class="accordion-content backstory-section">
+            <!-- Backstory content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Movies</h2>
+        </div>
+        <div class="accordion-content movies-section">
+            <!-- Movies content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Roles</h2>
+        </div>
+        <div class="accordion-content roles-section">
+            <!-- Roles content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Physical Transformation</h2>
+        </div>
+        <div class="accordion-content physical-transformation-section">
+            <!-- Physical Transformation content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Controversial Roles</h2>
+        </div>
+        <div class="accordion-content controversial-roles-section">
+            <!-- Controversial Roles content will be populated here -->
+        </div>
+
+        <div class="accordion-header">
+            <h2>Lucky Charm</h2>
+        </div>
+        <div class="accordion-content lucky-charm-section">
+            <!-- Lucky Charm content will be populated here -->
+        </div>
     </div>
+
+    <!-- Loading Spinner (visible while fetching data) -->
+    <div id="loading-spinner" style="display: none;">Loading...</div>
+
   </section>
   <footer class="footer bg-dark mt-4">
     <div class="container">
@@ -123,7 +167,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="./js/actors.js"></script>
+  <script type="module" src="./js/actorDetails.js"></script>
+    <script src="./js/actors.js"></script>
 </body>
 
 </html>

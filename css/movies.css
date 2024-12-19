@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#pTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.movieSearchDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.movieSearchDiv input {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.movieCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.movieCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.movieDetails {
+    padding: 10px;
+}
+
+.movieDetails h4 {
+    color: black;
+    margin: 0;
+    font-size: 18px;
+}
+
+.movieYear {
+    color: #888;
+    font-size: 14px;
+}
+
+.movieRating {
+    margin-top: 10px;
+}
+
+.starRating {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('star.png') no-repeat;
+}
+
+.starRating.full {
+    background-position: 0 0;
+}
+
+.starRating.half {
+    background-position: -20px 0;
+}
+
+.movieLinks {
+    margin-top: 10px;
+}
+
+.movieLinks a {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.movieLinks .btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.movieLinks .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pageDiv {
+    display: flex;
+    align-items: center;
+}
+
+.pageDiv select {
+    margin-right: 10px;
+}
+
+.pDetails {
+    display: flex;
+    align-items: center;
+}
+
+.pDetails p {
+    margin: 0;
+}
+
+.pButtons {
+    display: flex;
+    align-items: center;
+}
+
+.pButtons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pButtons button:disabled {
+    cursor: not-allowed;
+    color: #ccc;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
